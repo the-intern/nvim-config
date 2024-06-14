@@ -39,3 +39,10 @@ luac.out
 *.x86_64
 *.hex
 
+# macos
+.DS_Store
+
+# local
+_tmp_sheets_*.md
+lazy_lock.json
+
