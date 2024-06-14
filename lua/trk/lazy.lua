@@ -9,17 +9,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
     lazypath,
   })
 end
-
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({
-  {
-	"bluz71/vim-nightfly-guicolors",
-	priority = 1000,
-	config = function()
-		-- load colorscheme here
-		vim.cmd([[colorscheme nightfly]])
-	end,
-  }
-})
+require("lazy").setup("trk.plugins")
 
